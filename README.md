@@ -1,5 +1,5 @@
 # Euler Project
-This repository is open to anyone interested in completing the Euler Project questions.
+This repository is open to anyone interested in solving the Euler Project problems.
 
 ## euler_project.py
 Python file for the Euler Project code
