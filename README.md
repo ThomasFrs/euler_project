@@ -1,7 +1,7 @@
 # Project Euler
 This repository is open to anyone interested in solving the Euler Project problems.
 
-## euler_project.py
+## project_euler.py
 Python file for the Euler Project code.
 
 ## test_function.py
