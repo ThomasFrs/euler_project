@@ -1,4 +1,4 @@
-# Euler Project
+# Project Euler
 This repository is open to anyone interested in solving the Euler Project problems.
 
 ## euler_project.py

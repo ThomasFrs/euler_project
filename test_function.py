@@ -1,4 +1,4 @@
-from euler_project import *
+from project_euler import *
 
 def test_function(*args):
         euler = Euler()
