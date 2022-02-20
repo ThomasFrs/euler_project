@@ -1,8 +1,8 @@
 # Project Euler
-This repository is open to anyone interested in solving the Euler Project problems.
+This repository is open to anyone interested in solving the Project Euler problems.
 
 ## project_euler.py
-Python file for the Euler Project code.
+Python file for the Project Euler code.
 
 ## test_function.py
-Python file to test all of euleur_project.py's code.
+Python file to test all of project_euler.py's code.
