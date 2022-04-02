@@ -38,3 +38,18 @@ def sieve_of_eratosthenes(n):
     prime[0]= False
     prime[1]= False
     return sum([p for p in range(n + 1) if prime[p]])
+
+def list_factors(number):
+  """
+  number: natural integer
+  return: list of all positive factors of number
+  """
+  factors_list = []
+  for i in range(1, int(number**0.5)): # factors can't be higher than the sqrt of a number
+    if (number % i == 0): 
+      if i == int(number**0.5): # don't duplicate factor if the factor is the sqrt of a number
+        factors_list.append(i)
+      else:
+        if i not in factors_list:
+          factors_list.extend([i, int(number/i)]) # list factor and number/factor which significantly decreases the processing time
+  return factors_list
