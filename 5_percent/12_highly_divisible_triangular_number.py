@@ -1,4 +1,3 @@
-import time
 import _common_functions as cf
 
 def highly_divisible_triangular_number(nb_factors):
@@ -20,4 +19,4 @@ print(cf.average_running_time(10, highly_divisible_triangular_number, 500))
 # 2nd attempt: 20s for 500 factors, great success!
 # 3rd attempt: 19s for 500 factors.
 # 4th attempt: algorithm now uses for loop instead of while, 9s for 500 factors!
-# Last attempt: 0.006s for 50 factors, 0.06s for 150 factors, 4.831s for 500 factors.
+# Last attempt: Average running time of highly_divisible_triangular_number for 10 tests: 4.299981045722961 seconds
