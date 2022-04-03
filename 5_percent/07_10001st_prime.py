@@ -11,6 +11,7 @@ def numberth_prime(number):
       n += 1
       if cf.is_prime(n):
           i += 1
-  return n, i
+  return n
 
-assert numberth_prime(100001) == 104743
+assert numberth_prime(10001) == 104743
+print(cf.average_running_time(10, numberth_prime, 10001))

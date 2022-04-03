@@ -1,8 +1,4 @@
 # Project Euler
 This repository is open to anyone interested in solving the Project Euler problems.
-
-## project_euler.py
-Python file for the Project Euler code.
-
-## test_function.py
-Python file to test all of project_euler.py's code.
+Directories represent the level (in %) of the problems in the directory.
+_common_functions.py is a module of highly useful python functions that are widely used in their directory.

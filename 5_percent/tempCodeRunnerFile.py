@@ -1,1 +1,0 @@
-en(divisors_list)
