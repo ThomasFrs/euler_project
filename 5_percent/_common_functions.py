@@ -70,3 +70,20 @@ def average_running_time(nb_tests, function, *args):
     end_time = time.time()
     runnning_time.append(end_time-start_time)  
   return "Average running time of %s for %s tests: %s seconds" %(function.__name__, nb_tests, (sum(runnning_time))/len(runnning_time))
+
+def factorial(number): # very inefficient, can and will be improved
+  """
+  number: natural integer to multiply by its previous numbers
+  return: factorial of number
+  """
+  factorial = number
+  for i in reversed(range(1, number)):
+    factorial *= i
+  return factorial
+
+def binomial_coefficient(n, k):
+  """
+  n, k: natural integer
+  return: number of occurence of k in n
+  """
+  return int(factorial(n)/(factorial(k)*(factorial(n-k))))
