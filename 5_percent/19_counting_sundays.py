@@ -18,6 +18,11 @@ def counting_sundays(start_year, end_year):
 # this is a more mathematical approach that i prefer
 # though it doesn't seem as efficient and intuitive as the first one
 def counting_sundays_math(start_year, end_year, starting_day):
+    """
+    start_year, end_year: relative integers
+    starting_day: positive integer of the first day (monday = 1) of the given starting_year
+    return: number of sundays being the first day of the month between start_year and end_year
+    """
     month_days = [31, 28, 31, 30, 31, 30, 31, 31,
                   30, 31, 30, 31]  # days for every month
     day_of_the_week = starting_day  # on which day of the week we're starting
