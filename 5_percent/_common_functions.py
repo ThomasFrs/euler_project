@@ -75,13 +75,14 @@ def average_running_time(nb_tests, function, *args):
     return: average running time of function calculated from nb_tests tests
     """
     runnning_time = []
-    for i in range(nb_tests):
-        start_time = time.time()
+    for i in range(nb_tests):  # repeats nb_tests test of the function
+        start_time = time.time()  # start time
         function(*args)
         end_time = time.time()
+        # execution time of the function
         runnning_time.append(end_time - start_time)
-    return "Average running time of %s for %s tests: %s seconds" % (
-        function.__name__, nb_tests, (sum(runnning_time)) / len(runnning_time))
+    return "Average running time of %s%s for %s tests:\n%s seconds" % (
+        function.__name__, args, nb_tests, (sum(runnning_time)) / len(runnning_time))  # average execution time
 
 
 def factorial(number):  # very inefficient, can and will be improved
@@ -90,7 +91,7 @@ def factorial(number):  # very inefficient, can and will be improved
     return: factorial of number
     """
     factorial = number
-    for i in reversed(range(1, number)):
+    for i in reversed(range(2, number)):
         factorial *= i
     return factorial
 
