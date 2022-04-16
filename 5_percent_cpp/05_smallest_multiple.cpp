@@ -1,3 +1,10 @@
+/* this problem is solved rather easily when using mathematics rather than brute-forcing your
+way out (which is still easy), basically, every number below a maximum is made of primes,
+if you calculate the maximum power of these primes below a maximum and multiply them altogether,
+you obtain the smallest number that can be divided by all numbers below a maximum.
+I found this solution on stack overflow since i had a hard time figuring out how to solve this
+not using brute-force (which I hate) */
+
 #include <iostream>
 #include <cmath>
 
