@@ -1,4 +1,3 @@
-from email import generator
 import string
 import time
 
@@ -69,7 +68,7 @@ def list_factors(number):
     return factors_list
 
 
-def average_running_time(nb_tests, function, *args):
+def average_running_time(nb_tests: int, function, *args) -> string:
     """
     nb_test: natural integer representing number of time to test function
     function: function to test the average running time of
@@ -106,7 +105,7 @@ def binomial_coefficient(n, k):
     return int(factorial(n) / (factorial(k) * (factorial(n - k))))
 
 
-def list_permutations(elements: list) -> generator:
+def list_permutations(elements: list):
     """
     element: list or string to list the permutations of
     return: generator of all permutations of element
