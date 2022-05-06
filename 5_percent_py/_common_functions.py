@@ -1,3 +1,5 @@
+from email import generator
+import string
 import time
 
 
@@ -102,3 +104,16 @@ def binomial_coefficient(n, k):
     return: number of occurence of k in n
     """
     return int(factorial(n) / (factorial(k) * (factorial(n - k))))
+
+
+def list_permutations(elements: list) -> generator:
+    """
+    element: list or string to list the permutations of
+    return: generator of all permutations of element
+    """
+    if len(elements) <= 1:
+        yield elements
+    else:
+        for perm in list_permutations(elements[1:]):
+            for i in range(len(elements)):
+                yield perm[:i] + elements[0:1] + perm[i:]
