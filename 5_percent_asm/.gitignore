@@ -1,1 +1,2 @@
-nasm_c.sh
+*
+!*.asm
